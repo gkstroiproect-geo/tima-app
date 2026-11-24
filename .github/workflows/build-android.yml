@@ -48,9 +48,6 @@ jobs:
           distribution: zulu
           java-version: 17
 
-      - name: Set up the Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Set up Flutter and deps
         uses: ./.github/actions/setup-flutter
         with:

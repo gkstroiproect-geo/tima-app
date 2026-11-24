@@ -58,7 +58,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: ${{ fromJSON(inputs.targets) }}
+              target: ["arm64"]
+
     steps:
       - uses: actions/checkout@v6
         with:

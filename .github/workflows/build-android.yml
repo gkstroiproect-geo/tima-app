@@ -56,7 +56,7 @@ jobs:
 
       - name: Build TVPN APK
         run: |
-          flutter build apk --release --split-per-abi --no-tree-shake-icons
+          flutter build apk --release --split-per-abi --no-tree-shake-icons --dart-define=CHANNEL=prod
 
       - name: Collect the APKs
         run: |
